@@ -372,7 +372,7 @@ We're going to talk about ActiveRecord
 What if we want to add a new field when creating/updating a project, we'd have to change it in two places (edit.html.erb and new.html.erb)
 Let's clean up our templates.  
 
-* Create a new file ```app/views/projects/_render.html.erb```
+* Create a new file ```app/views/projects/_form.html.erb```
 * This is known as a partial. (A partial template that is reusable)
 * Put the following inside of it:
 ```erb
