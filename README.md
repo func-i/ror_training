@@ -285,6 +285,11 @@ We're going to talk about ActiveRecord
     params.require(:project).permit(:name)
   end
 ```
+* Submit your form, missing the route
+* Add the route:
+```ruby
+  post 'projects', to: 'projects#create'
+```
 
 ### Questions
 
