@@ -80,7 +80,7 @@ Let's quickly add boostrap to the project
 * Open your Gemfile (file in the root of your project)
 * Add the line ```gem 'boostrap-sass'```
 * $ bundle install
-* Open ```app/javascripts/application.js``` and add ```//= require bootstrap```
+* Open ```app/assets/javascripts/application.js``` and add ```//= require bootstrap```
 * mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
 * replace contents of ```applications.scss``` with:
 ```
@@ -99,7 +99,7 @@ Let's quickly add boostrap to the project
   </table>
 ```
 
-* Wrap layout yield with a container:
+* Wrap yield in ```app/views/layouts/application.html.erb``` with a container:
 ```erb
   <div class='container'>
     <%= yield %>
